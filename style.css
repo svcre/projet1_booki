@@ -71,3 +71,56 @@ body {
         border-color:#0065fc;
         padding: 46px 20px 0px 20px ;
     }
+
+/* barre de recherche */
+
+    .search {
+        width: 100%;
+        display: flex;
+    
+    }
+    
+    .searchPosition {
+        width: 50px;
+        height: 49px;
+        background-color: #D9D9D9;
+        color: #ffffff;
+        text-align: center;
+        border: 1px solid #D9D9D9;
+        border-radius: 15px 0px 0px 15px;
+        cursor: pointer;
+    
+    }
+    
+    .searchBar {
+        width: 246px;
+        height: 45px;
+        border: 1px solid #F2F2F2;
+        border-right: none;
+        padding-left: 14px;
+    
+        font-weight: 700;
+        color: #000;
+        font-size: 18px;
+    
+    }
+    
+    .searchButton {
+        width: 132px;
+        height: 49px;
+        background-color: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        padding: 15px 16px 15px 16px;
+        cursor: pointer;
+        
+        color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+    
+        align-items: center;
+        justify-content: center;
+    }
+    
