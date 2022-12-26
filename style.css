@@ -177,7 +177,6 @@ body {
 .blocPopulaire {
     height: 625px;
     width: 420px;
-
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -225,7 +224,34 @@ body {
 
   /* Cards Populaire */
 
+  .cardPop {
+    display: flex;
+    width: 343px;
+    height: 144px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: #fff solid 5px;
+    border-radius: 20px;
+    margin: 15px;
+  }
+  
+  .cardPop img {
+    object-fit: cover; /* l'image remplit le div sans redimensionner */
+    width: 137px;
+    height: 144px;
+    overflow: hidden; /* empêche de déborder du div */
+    border-radius: 20px 0px 0px 20px;
 
+  }
+  
+  .containerPop {
+    padding: 2px 16px;
+    width: 200px;
+    margin-top: 7px;
+    line-height: 20px;
+    font-size: 16px;
+  }
   
   /* Cards activités */
 
