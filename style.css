@@ -150,3 +150,42 @@ body {
 .filtersBubble:hover {
     background-color:#D9D9D9;
 }
+
+/* grids */
+
+.bande {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+    margin-bottom: 60px;
+}
+
+.blocMarseille {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 625px;
+    width: 880px;
+
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    
+}
+
+.blocPopulaire {
+    height: 625px;
+    width: 420px;
+
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+
+.blocAct {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 420px;
+}
