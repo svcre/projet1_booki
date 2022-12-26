@@ -5,6 +5,7 @@ body {
         margin: 0px 55px 0px 55px;
         background-color: #fff;
         font-family: Raleway;
+        max-width: 1400px;
     
     }
     
@@ -184,10 +185,11 @@ body {
 
 .blocAct {
     display:flex;
+    width: 100%;
     flex-direction:row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 420px;
+
 }
 
 /* cards Marseille */
