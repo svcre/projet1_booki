@@ -280,4 +280,24 @@ body {
     font-weight: 800;
   }
 
+/* footer */
 
+.gridFooter {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 225px;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 70px;
+    padding: 45px 0px 0px 70px;
+}
+
+.blocFooter {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 250px;
+    font-size: 18px;
+    line-height: 30px;
+}
