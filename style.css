@@ -27,7 +27,7 @@ body {
     
     h2 {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 22px;
     }
     
     p {
@@ -164,22 +164,33 @@ body {
 
 .blocMarseille {
     display: flex;
+    justify-content: justify;
+    flex-wrap: wrap;
+    width: 880px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.titleMarseille {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.cardsrow {
+    display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 625px;
-    width: 880px;
-
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    
 }
 
 .blocPopulaire {
+    margin-left: 40px;
     height: 625px;
     width: 420px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding-left: 37px;
+    padding-top: 20px;
 }
 
 
@@ -228,26 +239,29 @@ body {
 
   .cardPop {
     display: flex;
+    flex-direction: row;
     width: 343px;
-    height: 144px;
+    height: 134px;
     background-color: #fff;
     color: #000;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border: #fff solid 5px;
     border-radius: 20px;
-    margin: 15px;
+    margin-top: 30px;
+
   }
   
   .cardPop img {
     object-fit: cover; /* l'image remplit le div sans redimensionner */
     width: 137px;
-    height: 144px;
+    height: 134px;
     overflow: hidden; /* empêche de déborder du div */
     border-radius: 20px 0px 0px 20px;
 
   }
   
   .containerPop {
+    flex-wrap: wrap;
     padding: 2px 16px;
     width: 200px;
     margin-top: 7px;
@@ -275,10 +289,11 @@ body {
   }
   
   .containerAct {
-
-    padding: 2px 16px;
     width: 302px;
-    height: 56px;
+    height: 36px;
+    font-weight: 800;
+    padding: 19px 0px 0px 20px;
+    font-size: 16px;
     font-weight: 800;
   }
 
@@ -291,7 +306,6 @@ body {
     flex-wrap: nowrap;
     height: 225px;
     background-color: #F2F2F2;
-    border-radius: 20px 20px 0px 0px;
     margin-top: 70px;
     padding: 45px 0px 0px 70px;
 }
@@ -302,4 +316,22 @@ body {
     margin-right: 250px;
     font-size: 18px;
     line-height: 30px;
+}
+
+
+
+@media(min-width: 768px) and (max-width: 1388px)
+
+{
+
+ code tablette
+
+}
+
+@media(max-width: 767px)
+
+{ 
+
+code smartphone
+
 }

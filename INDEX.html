@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <title>Booki</title>
         <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b1fe45eaa0.js" crossorigin="anonymous"></script>
+
     </head>
 
     <header>
@@ -14,8 +16,8 @@
                 <img src="assets/logo/booki.png" alt="" width="61px" height="19px" />
             </div>
             <div class="linkBox">
-                    <a href="">Hébergements</a>
-                    <a href="">Activités</a>
+                    <a href="#hebergements">Hébergements</a>
+                    <a href="#activites">Activités</a>
 
             </div>
         </div>
@@ -28,7 +30,7 @@
     <!-- barre de recherche -->
 
     <div class="search">
-        <button type="submit" class="searchPosition" placeholder="Rechercher"> <img src="https://e7.pngegg.com/pngimages/325/237/png-clipart-map-location-map-logo-symbol.png" height="14px" width="18px" alt="icone position" />
+        <button type="submit" class="searchPosition" placeholder="Rechercher"> <i class="fa-solid fa-location-dot fa-xl"  style="color:#000;"></i>
             </button>
         <input type="text" class="searchBar" placeholder="Marseille, France">
         <button type="submit" class="searchButton" placeholder="Rechercher">Rechercher
@@ -40,22 +42,26 @@
     <!-- filtres -->
     <div class="filtersFlex">
         <h2>Filtres</h2>
-        <div class="filtersBubble">Economique</div>
-        <div class="filtersBubble">Familial</div>
-        <div class="filtersBubble">Romantique</div>
-        <div class="filtersBubble">Animaux autorisés</div>
+        <div class="filtersBubble"><i class="fa-solid fa-money-bill-wave" style="color:#0065FC; margin-right: 10px;"></i> Economique</div>
+        <div class="filtersBubble"><i class="fa-solid fa-person" style="color:#0065FC; margin-right: 10px;"></i> Familial</div>
+        <div class="filtersBubble"><i class="fa-solid fa-heart" style="color:#0065FC; margin-right: 10px;"></i> Romantique</div>
+        <div class="filtersBubble"><i class="fa-solid fa-dog" style="color:#0065FC; margin-right: 10px;"></i> Animaux autorisés</div>
     </div>
 
     <!-- marseille + populaires -->
 
     <div class="bande">
         <div class="blocMarseille">
-            <div class="cardMarseille">
+
+          <div class="titleMarseille"><h2>Hébergements à Marseille</h2></div>
+
+          <div class="cardsrow"> 
+          <div class="cardMarseille" id="hebergements">
                 <img src="assets\hebergements\1_xlarge\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Avatar" />
                 <div class="containerMarseille">
                   <b>Auberge la Canebière</b><br>
                   Nuit à partir de 25€<br>
-                  img étoiles
+                  <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
               </div>
 
@@ -64,7 +70,7 @@
                 <div class="containerMarseille">
                     <b>Hôtel du Port</b><br>
                   Nuit à partir de 52€<br>
-                  img étoiles
+                  <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
               </div>
 
@@ -73,7 +79,7 @@
                 <div class="containerMarseille">
                     <b>Hôtel les mouettes</b><br>
                   Nuit à partir de 76€<br>
-                  img étoiles
+                  <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
               </div>
 
@@ -82,7 +88,7 @@
                 <div class="containerMarseille">
                     <b>Hôtel de la mer</b><br>
                   Nuit à partir de 46€<br>
-                  img étoiles
+                  <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
 
               </div>
@@ -91,7 +97,7 @@
                 <div class="containerMarseille">
                     <b>Auberge Le Panier</b><br>
                   Nuit à partir de 23€<br>
-                  img étoiles
+                  <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
               </div>
 
@@ -100,39 +106,42 @@
                 <div class="containerMarseille">
                     <b>Hôtel Chez Amina</b><br>
                   Nuit à partir de 96€<br>
-                  img étoiles
+                  <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
+              </div>
               </div>
 
         </div>
         <div class="blocPopulaire">
 
-            <div class="cardPop">
+          <h2>Les plus populaires <i class="fa-solid fa-chart-line fa-sm" style="color:#0065FC;"></i></h2>
+
+            <a href="#"><div class="cardPop">
                 <img src="assets\hebergements\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Avatar" />
                 <div class="containerPop">
                   <b>Hôtel Le soleil du matin</b><br>
                   Nuit à partir de 128€<br>
                   img étoiles
                 </div>
-              </div>
+              </div></a>
 
-              <div class="cardPop">
+              <a href="#"><div class="cardPop">
                 <img src="assets\hebergements\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Avatar" />
                 <div class="containerPop">
                     <b>Chambres d'hôtes Au coeur de l'eau</b><br>
                     Nuit à partir de 71€<br>
                     img étoiles
                 </div>
-              </div>
+              </div></a>
 
-              <div class="cardPop">
+              <a href="#"><div class="cardPop">
                 <img src="assets\hebergements\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Avatar" />
                 <div class="containerPop">
                     <b>Hôtel Bleu et Blanc</b><br>
                     Nuit à partir de 68€<br>
                     img étoiles
                 </div>
-              </div>
+              </div></a>
 
         </div>
 
@@ -142,33 +151,33 @@
 
     <div class="blocAct">
 
-        <div class="cardAct">
+      <a href="#"><div class="cardAct">
             <img src="assets/activites/1_xlarge/vieuxport.jpg" alt="Avatar" />
-            <div class="containerAct">
+            <div class="containerAct" id="activites">
               Vieux-Port
             </div>
-          </div>
+          </div></a>
 
-          <div class="cardAct">
+          <a href="#"><div class="cardAct">
             <img src="assets\activites\1_xlarge\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Avatar" />
             <div class="containerAct">
               Fort de Pomègues
             </div>
-          </div>
+          </div></a>
 
-          <div class="cardAct">
+          <a href="#"><div class="cardAct">
             <img src="assets\activites\1_xlarge\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Avatar" />
             <div class="containerAct">
               Parc national des Calanques
             </div>
-          </div>
+          </div></a>
 
-          <div class="cardAct">
+          <a href="#"><div class="cardAct">
             <img src="assets\activites\1_xlarge\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Avatar" />
             <div class="containerAct">
               Notre-Dame-de-la-Garde
             </div>
-          </div>
+          </div></a>
 
           </div>
 
