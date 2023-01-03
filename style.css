@@ -169,6 +169,7 @@ body {
     width: 880px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    align-content: flex-start;
 }
 
 .titleMarseille {
@@ -184,13 +185,15 @@ body {
 }
 
 .blocPopulaire {
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     height: 625px;
     width: 420px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-left: 37px;
-    padding-top: 20px;
+    padding-top: 39px;
 }
 
 
@@ -269,6 +272,25 @@ body {
     font-size: 16px;
   }
   
+  /* bande titre Populaire */
+
+  .wrapPopTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .leftBoxPop {
+
+  }
+
+  .rightBoxPop {
+
+  }
+
+
+
   /* Cards activités */
 
   .cardAct {
@@ -320,18 +342,15 @@ body {
 
 
 
-@media(min-width: 768px) and (max-width: 1388px)
+@media screen and (max-width: 1388px) {
 
-{
-
- code tablette
+    .bande {
+flex-direction: column;
+    }
 
 }
 
-@media(max-width: 767px)
+@media screen and (max-width: 767px) { 
 
-{ 
-
-code smartphone
 
 }
