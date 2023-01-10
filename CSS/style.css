@@ -4,9 +4,8 @@
 /* TODO (DESKTOP) redimensionner images 
 TODO (DESKTOP) graisser les bold et les h1 
 
-TODO (TABLETTE) margins footer 
-
-TODO (GSM) pop + act + footer à flex volumn
+TODO (GSM) fixer marge droite
+TODO (GSM) barre de recherche
 
 
 */
@@ -140,6 +139,10 @@ body {
     
         align-items: center;
         justify-content: center;
+    }
+
+    .searchButtonLoupe {
+      display: none;
     }
     
     /* filtres */
@@ -407,7 +410,7 @@ margin-left: 20px;
 
 
 
-
+      /* M E D I A Q U E R Y    T A B L E T T E */
 
 @media screen and (max-width: 1388px) {
 
@@ -482,7 +485,6 @@ flex-direction: column;
         margin-right: 0px;
     }
 
-
 }
 
 
@@ -491,7 +493,7 @@ flex-direction: column;
 
 
 
-
+          /* M E D I A Q U E R Y    G S M */
 
 @media screen and (max-width: 767px) { 
 
@@ -507,12 +509,20 @@ p{
   margin-left: 20px;
 }
 
+h1 {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
   .headWrapper {
     flex-wrap:nowrap;
     flex-direction: column;
     align-items: center;
   }
   
+/* liens bordure basse GSM */
+
+
 .imgBox{
   justify-content: center;
   flex-direction: auto;
@@ -523,72 +533,110 @@ p{
     flex-direction: row;
     width: 100%;
     border-bottom: 3px #F2F2F2 solid;
-    margin: 0px;
+    margin: 0 auto;
   }
 
 
+
 .linkBox a{
-    margin-right: 40px;
-    padding: 48px 20px 0px 20px ;
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    width: 100%;
+    padding: 40px 0px 20px 0px ;
     font-size:18px;
     border-bottom: 3px #0065FC solid;
 }
   
+/* section barre de recherche GSM */
+
 
   .searchPosition {
+    margin-left: 20px;
     width: 50px;
+    height: 49px;
 
 
 }
 
 .searchBar {
-    width: 282px;
+    width: 232px;
+    color: #000;
 }
 
 .searchButton {
-    width: 49px;
+    display: none;
+}
+
+.searchButtonLoupe {
+        width: 50px;
+        height: 49px;
+        background-color: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        padding: 15px 16px 15px 16px;
+        cursor: pointer;
+        
+        color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+    
+        align-items: center;
+        justify-content: center;
 }
 
 .searchButton::placeholder {
   width: 49px;
 }
 
-.filter {
-margin-bottom: 20px;
-display: flex;
-width: 100%;
-}
+
+/* section filtres GSM */
+
+
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    }
 
 
   .filtersFlex {
+    width: 90%;
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: 20px;
+    margin-right: 20px;
     justify-content: space-between;
+  
     
   }
 
   .filtersBubble {
-    width: 160px;
+    width: 146px;
     height: 50px;
     padding: 0px;
-    padding-left: 15px;
+    padding-left: 14px;
         margin: 0px;
     margin-bottom: 17px;
-
-    border-radius: 25px;
     align-items: center; 
     justify-content: left;
     font-size: 11px;
 }
+
+/* bande inversée Marseille/populaire */
+
 
   .bande {
 
     flex-direction: column-reverse;
   }
   
+/* section Marseille GSM */
+
   .blocMarseille {
-  
+    justify-content: center;
     width: 100%;
     border-radius: 0px;
     padding-top: 26px;
@@ -608,6 +656,14 @@ width: 100%;
     height: 75px;
   }
 
+/* section Populaire GSM */
+
+
+  .wrapPopTitle {
+    width: 100%;
+    margin-right: 20px;
+  }
+
   .cardsrow {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -617,13 +673,16 @@ width: 100%;
   width: 100%;
   flex-direction: column;
   padding: 0px;
+  padding-top: 25px;
   margin: 0px;
   border-radius: 0px;
   padding-bottom: 47px;
   }
   
   .cardPop {
-    width: 334px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
   
   }
   
@@ -681,6 +740,5 @@ width: 100%;
     margin-bottom: 40px;
     margin-right: 0px;
 }
-
 
   }
