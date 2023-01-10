@@ -57,34 +57,32 @@ body {
     
     .headWrapper {
         display:flex;
+        justify-content: space-between;
         flex-wrap:wrap;
         position: relative;
-        width: 100%;
     }
     
     
     .imgBox {
         display: flex;
-        width: 30%;
         margin-top: 40px;
     }
     
     .linkBox {
         display: flex;
-        width: 70%;
         justify-content: right;
-        top:0;
-        right: 207px;
     }
     
     .linkBox a{
-        margin-right: 40px;
         padding: 48px 20px 0px 20px ;
         font-size:18px;
     }
+
+    .linkBox a:nth-child(1){
+      margin-right: 20px;
+  }
     
     .linkBox a:hover {
-        margin-right: 40px;
         border-top: 2px solid;
         border-color:#0065fc;
         padding: 46px 20px 0px 20px ;
@@ -95,6 +93,7 @@ body {
     .search {
         width: 100%;
         display: flex;
+        margin-top: 20px;
     
     }
     
@@ -125,21 +124,14 @@ body {
     
     .searchButton {
         width: 132px;
-        height: 49px;
         background-color: #0065FC;
         border: 1px solid #0065FC;
         border-radius: 0px 15px 15px 0px;
-        padding: 15px 16px 15px 16px;
         cursor: pointer;
-        
         color: #ffffff;
         text-align: center;
         font-size: 18px;
         font-weight: 700;
-        line-height: 21px;
-    
-        align-items: center;
-        justify-content: center;
     }
 
     .searchButtonLoupe {
@@ -198,6 +190,14 @@ align-items: center;
 
 .infoImg i {
   font-size: 10px;
+}
+
+.showMore {
+  width: 100%;
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
 }
 
 /* grids */
@@ -346,6 +346,10 @@ align-items: center;
 
   /* bande titre Populaire */
 
+.titleAct {
+  margin-bottom: 18px;
+}
+
   .wrapPopTitle {
     display: flex;
     width: 100%;
@@ -389,7 +393,7 @@ align-items: center;
     font-weight: 800;
     padding-left: 19px;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     align-items: center;
   }
 
