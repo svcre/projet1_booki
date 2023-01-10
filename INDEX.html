@@ -6,14 +6,14 @@
         <title>Booki</title>
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b1fe45eaa0.js" crossorigin="anonymous"></script>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <header>
         <div class="headWrapper">
 
             <div class="imgBox">
-                <img src="assets/logo/booki.png" alt="" width="61px" height="19px" />
+                <img src="assets/logo/Booki.png" alt="Logo Booki" width="61px" height="19px" />
             </div>
             <div class="linkBox">
                     <a href="#hebergements">Hébergements</a>
@@ -33,21 +33,22 @@
         <button type="submit" class="searchPosition" placeholder="Rechercher"> <i class="fa-solid fa-location-dot fa-xl"  style="color:#000;"></i>
             </button>
         <input type="text" class="searchBar" placeholder="Marseille, France">
-        <button type="submit" class="searchButton" placeholder="Rechercher">Rechercher
+            <!-- TODO (html) icone loupe à la place du texte --> <button type="submit" class="searchButton" placeholder="Rechercher">Rechercher
         </button>
     </div>
-<br>
-<p>+ de 500 logements disponibles dans cette ville.</p>
+
 
     <!-- filtres -->
     <div class="filtersFlex">
-        <h2>Filtres</h2>
-        <div class="filtersBubble"><i class="fa-solid fa-money-bill-wave" style="color:#0065FC; margin-right: 10px;"></i> Economique</div>
+        <div class="filter"><h2>Filtres</h2></div>
+          <div class="filtersBubble"><i class="fa-solid fa-money-bill-wave" style="color:#0065FC; margin-right: 10px;"></i> Economique</div>
         <div class="filtersBubble"><i class="fa-solid fa-person" style="color:#0065FC; margin-right: 10px;"></i> Familial</div>
-        <div class="filtersBubble"><i class="fa-solid fa-heart" style="color:#0065FC; margin-right: 10px;"></i> Romantique</div>
-        <div class="filtersBubble"><i class="fa-solid fa-dog" style="color:#0065FC; margin-right: 10px;"></i> Animaux autorisés</div>
+
+          <div class="filtersBubble"><i class="fa-solid fa-heart" style="color:#0065FC; margin-right: 10px;"></i> Romantique</div>
+          <div class="filtersBubble"><i class="fa-solid fa-dog" style="color:#0065FC; margin-right: 10px;"></i> Animaux autorisés</div>
     </div>
 
+    <div class="infoText"><div class="infoImg"><i class="fa-solid fa-info" style="color:#0065FC; height: 8px;"></i></div> <p>Plus de 500 logements disponibles dans cette ville.</p></div>
     <!-- marseille + populaires -->
 
     <div class="bande">
@@ -109,6 +110,9 @@
                   <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
                 </div>
               </div>
+
+              <div class="titleMarseille"><h2><a href="">Afficher plus</a></h2></div>
+
               </div>
 
         </div>
@@ -116,38 +120,50 @@
 
           <div class="wrapPopTitle">
             <div class="leftBoxPop"><h2>Les plus populaires</h2></div>
-            <div class="rightBoxPop"><i class="fa-solid fa-chart-line fa-sm" style="color:#0065FC;"></i></div>
+            <div class="rightBoxPop"><i class="fa-solid fa-chart-line" style="color:#0065FC;"></i></div>
           </div>
 
 
-
+          <div class="cardsBox">
             <a href="#"><div class="cardPop">
                 <img src="assets\hebergements\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Avatar" />
                 <div class="containerPop">
-                  <b>Hôtel Le soleil du matin</b><br>
+                  <div class="pPop">
+                    <div class="titlePop">Hôtel Le soleil du matin</div>
                   Nuit à partir de 128€<br>
-                  img étoiles
+                </div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
+                  </div>
                 </div>
               </div></a>
 
               <a href="#"><div class="cardPop">
                 <img src="assets\hebergements\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Avatar" />
                 <div class="containerPop">
-                    <b>Chambres d'hôtes Au coeur de l'eau</b><br>
+                  <div class="pPop">
+                    <div class="titlePop">Chambres d'hôtes Au coeur de l'eau</div>
                     Nuit à partir de 71€<br>
-                    img étoiles
+                  </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
+                    </div>
                 </div>
               </div></a>
 
               <a href="#"><div class="cardPop">
                 <img src="assets\hebergements\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Avatar" />
                 <div class="containerPop">
-                    <b>Hôtel Bleu et Blanc</b><br>
+                  <div class="pPop">
+                    <div class="titlePop">Hôtel Bleu et Blanc</div>
                     Nuit à partir de 68€<br>
-                    img étoiles
+                  </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-xs" style="color:#0065FC;"></i><i class="fa-regular fa-star fa-xs" style="color:#0065FC;"></i>
+                    </div>
                 </div>
               </div></a>
-
+            </div>
         </div>
 
     </div>
