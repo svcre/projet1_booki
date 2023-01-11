@@ -16,10 +16,6 @@ a {
   text-decoration:none;
 }
 
-a:hover {
-  color: #000;
-  text-decoration:none;
-}
 
 b {
   font-weight: 700;
@@ -60,12 +56,20 @@ p {
   color: #000;
 }
 
+.white {
+  color: #fff;
+}
+
 .FAmargin {
   margin-right: 10px;
 }
 
 .small {
   height: 8px;
+}
+
+.loupe {
+  display: none;
 }
 
 /* header */
@@ -149,9 +153,6 @@ margin-right: 20px;
   font-weight: 700;
 }
 
-.searchButtonLoupe {
-display: none;
-}
 
 /* filtres */
 
@@ -447,6 +448,10 @@ body {
 
 }
 
+.loupe {
+  display: none;
+}
+
 .blocMarseille {
   width: 100%; 
 }
@@ -621,11 +626,8 @@ width: 232px;
 color: #000;
 }
 
-.searchButton {
-display: none;
-}
 
-.searchButtonLoupe {
+.searchButton {
   width: 50px;
   height: 49px;
   background-color: #0065FC;
@@ -644,8 +646,12 @@ display: none;
   justify-content: center;
 }
 
-.searchButton::placeholder {
-width: 49px;
+.loupe {
+  display: block;
+}
+
+.rechercher {
+  display: none;
 }
 
 
