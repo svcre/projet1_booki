@@ -1,31 +1,10 @@
 
 /* body */
 
- /*
-
-DESKTOP 
-TODO row le bloc 1 en 993
-TODO redimensionner les cards act en 993
-
-TABLETTE
-TODO centrer le bloc 1 en 992
-TODO fix la taille des cards bloc 1 en 772
-
-GSM
-TODO !!! barre de recherche !!!
-TODO !!!! display none sur la loupe !!!
-TODO fixer bloc 2 centrer + cards
-TODO fix bloc 3 + cards 
-
-HTML
-TODO class fontawesome
-
-
-*/
 
 body {
   min-width: 320px;
-  margin: 0px 20px 0px 20px;;
+  margin: auto;
   background-color: #fff;
   font-family: Raleway;
   max-width: 1400px;
@@ -33,6 +12,11 @@ body {
 }
 
 a {
+  color: #000;
+  text-decoration:none;
+}
+
+a:hover {
   color: #000;
   text-decoration:none;
 }
@@ -64,6 +48,24 @@ p {
   margin: 0px;
   font-size: 16px;
   line-height: 19px;
+}
+
+/* class fontawesome */
+
+.blue {
+  color:#0065FC;
+}
+
+.black {
+  color: #000;
+}
+
+.FAmargin {
+  margin-right: 10px;
+}
+
+.small {
+  height: 8px;
 }
 
 /* header */
@@ -181,6 +183,8 @@ font-weight: 700;
 background-color: #DEEBFF;
 }
 
+/* "+ de 500 logements..." */
+
 .infoText {
 display: flex;
 flex-direction: row;
@@ -213,7 +217,7 @@ font-weight: 700;
 margin-top: 30px;
 }
 
-/* grids */
+/* blocs 1, 2 et 3 */
 
 .bande {
 display: flex;
@@ -322,10 +326,10 @@ margin-top: 30px;
 }
 
 .cardPop img {
-object-fit: cover; /* l'image remplit le div sans redimensionner */
+object-fit: cover; 
 width: 137px;
 height: 134px;
-overflow: hidden; /* empêche de déborder du div */
+overflow: hidden; 
 border-radius: 20px 0px 0px 20px;
 
 }
@@ -393,9 +397,9 @@ border-radius: 20px;
 }
 
 .cardAct img {
-object-fit: cover; /* l'image remplit le div sans redimensionner */
+object-fit: cover; 
 height: 388px;
-overflow:hidden; /* empêche de déborder du div */
+overflow:hidden;
 border-radius: 20px 20px 0px 0px;
 }
 
@@ -439,7 +443,7 @@ line-height: 36px;
 @media screen and (max-width: 992px) {
 
 body {
- margin: 0px 40px 0px 40px; 
+ margin: 0px 20px 0px 20px; 
 
 }
 
@@ -481,23 +485,23 @@ flex-direction: column;
 }
 
 .cardPop {
-width: 252px;
+width: 240px;
 
 }
 
 .blocAct {
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .cardAct {
-width: 182px;
+width: 170px;
 height: 276px;
 margin-bottom: 10px;
 }
 
 .cardAct img {
-width: 182px;
+width: 170px;
 height: 211px;
 
 }
@@ -508,7 +512,7 @@ margin-left: 40px;
 
 .containerAct {
 display: flex;
-width: 182px;
+width: 170px;
 height: 56px;
 align-items: center;
 }
@@ -556,13 +560,17 @@ margin-left: 20px;
 font-size: 22px;
 }
 
+h2 {
+  margin-left:20px;
+}
+
 .headWrapper {
 flex-wrap:nowrap;
 flex-direction: column;
 align-items: center;
 }
 
-/* liens bordure basse GSM */
+/* liens avec bordure basse GSM */
 
 
 .imgBox{
@@ -574,7 +582,6 @@ flex-direction: auto;
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  border-bottom: 3px #F2F2F2 solid;
   margin: 0 auto;
 }
 
@@ -585,6 +592,7 @@ flex-direction: auto;
   width: 100%;
   padding: 40px 0px 20px 0px ;
   font-size:18px;
+    border-bottom: 3px #F2F2F2 solid;
 }
 
   .linkBox a:hover {
@@ -592,6 +600,10 @@ flex-direction: auto;
     border-top: 0;
     padding: 40px 0px 17px 0px ;
 }
+
+.linkBox a:nth-child(1){
+  margin-right: 0px;
+  }
 
 /* section barre de recherche GSM */
 
@@ -644,6 +656,7 @@ width: 49px;
 margin-bottom: 20px;
 display: flex;
 width: 100%;
+margin-left: 0px;
 }
 
 
@@ -669,6 +682,10 @@ justify-content: left;
 font-size: 11px;
 }
 
+.infoImg {
+  margin-left: 20px;
+}
+
 /* bande inversée Marseille/populaire */
 
 
@@ -678,6 +695,10 @@ flex-direction: column-reverse;
 }
 
 /* section Marseille GSM */
+
+.titleMarseille {
+  margin-left: 0px;
+  }
 
 .blocMarseille {
 justify-content: center;
@@ -706,7 +727,10 @@ height: 75px;
 
 .containerPop {
 width: auto;
+flex-direction: column;
+justify-content: space-between;
 }
+
 .wrapPopTitle {
 width: 100%;
 margin-right: 20px;
@@ -736,8 +760,18 @@ margin-right: 20px;
 
 }
 
+.leftBoxPop {
+  margin-left: 10px; }
+
+  /* activités GSM */
+
+.titleAct{
+  margin-left: 20px;
+}
+
+
 .cardAct {
-width: 334px;
+  width: auto;
 height: 190px;
 }
 
@@ -759,15 +793,19 @@ flex-direction: column;
 }
 
 .blocAct {
-flex-direction: column;
 width: auto;
 align-items: center;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: inherit;
 }
 
 .cardAct {
-width: 334px;
+width: auto;
 height: 190px;
 margin-bottom: 24px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .cardAct img {
