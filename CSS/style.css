@@ -52,6 +52,8 @@ p {
   line-height: 19px;
 }
 
+
+
 /* class fontawesome */
 
 .blue {
@@ -77,6 +79,9 @@ p {
 .loupe {
   display: none;
 }
+
+
+
 
 /* header */
 
@@ -112,6 +117,9 @@ margin-right: 20px;
   border-color:#0065fc;
   padding: 46px 20px 0px 20px ;
 }
+
+
+
 
 /* barre de recherche */
 
@@ -160,6 +168,9 @@ margin-right: 20px;
 }
 
 
+
+
+
 /* filtres */
 
 .filtersFlex {
@@ -189,6 +200,9 @@ font-weight: 700;
 .filtersBubble:hover {
 background-color: #DEEBFF;
 }
+
+
+
 
 /* "+ de 500 logements..." */
 
@@ -223,6 +237,9 @@ font-size: 18px;
 font-weight: 700;
 margin-top: 30px;
 }
+
+
+
 
 /* blocs 1, 2 et 3 */
 
@@ -279,6 +296,10 @@ justify-content: space-between;
 
 }
 
+
+
+
+
 /* cards Marseille */
 
 
@@ -309,6 +330,9 @@ width: 246px;
 margin-top: 7px;
 line-height: 20px;
 }
+
+
+
 
 
 /* Cards Populaire */
@@ -367,6 +391,9 @@ flex-direction: column;
 }
 
 
+
+
+
 /* bande titre Populaire */
 
 .titleAct {
@@ -387,6 +414,9 @@ justify-content: space-between;
 display: flex;
 align-items: center;
 }
+
+
+
 
 
 
@@ -420,6 +450,11 @@ font-weight: 700;
 align-items: center;
 }
 
+
+
+
+
+
 /* footer */
 
 .gridFooter {
@@ -439,6 +474,10 @@ align-items: flex-start;
 font-size: 18px;
 line-height: 36px;
 }
+
+
+
+
 
 
 
@@ -553,6 +592,10 @@ height: auto;
 
 
 
+
+
+
+
     /* M E D I A Q U E R Y    G S M */
 
 @media screen and (max-width: 768px) { 
@@ -638,6 +681,10 @@ color: #000;
 }
 
 
+.showMore {
+  width: auto;
+}
+
 .searchButton {
   width: 50px;
   height: 49px;
@@ -663,6 +710,9 @@ color: #000;
 
 .rechercher {
   display: none;
+  position: absolute;
+left: 0;
+top: 0;
 }
 
 
@@ -833,15 +883,18 @@ height: 134px;
 height: 56px;
 }
 
+
+
 .gridFooter {
-width: 100%;
+width: auto;
 height: auto;
 flex-direction: column;
-padding-left: 30px;
+padding-left: 0px;
+margin-right: 0px;
 }
 
 .blocFooter {
-width: 100%;
+width: auto;
 margin-bottom: 40px;
 margin-right: 0px;
 }
